@@ -2,13 +2,25 @@
 <html>
 
 <head>
-
+  <title>mdprv</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script type="module">
+    // Skip local
+    if (location.hostname !== 'localhost') {
+      navigator.serviceWorker.register('/service-worker.js');
+    }
+  </script>
 </head>
 
 <body>
   <div>
     <div style='width: 100%; display: flex; justify-content: center;'>
-      <div style='width: 100%; max-width: 960px; margin-left: auto; margin-right: auto;'>
+      <div style='width: 100%; max-width: 780px; margin-left: auto; margin-right: auto;'>
+        <header>
+          <a href="/" style="color: #333; text-decoration: none;">👀 mdprv</h1></a>
+        </header>
+        <hr>
         <article class="__root__ markdown_body">
           ...
         </article>

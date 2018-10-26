@@ -48,7 +48,6 @@ if (location.pathname === "/") {
 } else {
   const buildUrl = (user: string, hash: string) =>
     `${GITHUB_USERCONTENT_ROOT}/${user}/${hash}/raw`;
-  // import url from 'url'
 
   const [_, user, hash] = location.pathname.split("/");
 
